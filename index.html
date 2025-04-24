@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>No Leak Lounge</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>No Leak Lounge</h1>
+    <p>Play your favorite unblocked games.</p>
+  </header>
+
+  <main>
+    <section class="game-list">
+      <div class="game-card" onclick="openGame('drifthunters.html')">
+        <h2>VIP Drifting Game</h2>
+      </div>
+      <!-- Add more games here -->
+    </section>
+  </main>
+
+  <div class="overlay" id="gameOverlay">
+    <div class="iframe-container">
+      <button class="close-btn" onclick="closeGame()">✖</button>
+      <iframe id="gameFrame" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 No Leak Lounge | Created by Jeff Jone</p>
+  </footer>
+
+  <div class="password-modal" id="passwordModal">
+    <div class="password-box">
+      <h2>Enter Password</h2>
+      <input type="password" id="passwordInput" placeholder="Enter password..." />
+      <div class="modal-buttons">
+        <button onclick="submitPassword()">Enter</button>
+        <button onclick="cancelPassword()">Cancel</button>
+      </div>
+      <p id="passwordError"></p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</html>

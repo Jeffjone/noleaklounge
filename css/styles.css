@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  text-align: center;
+}
+
+header {
+  padding: 2rem;
+  background-color: #1f1f1f;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3rem;
+  color: #f0f0f0;
+}
+
+p {
+  color: #aaa;
+}
+
+.game-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.game-card {
+  background-color: #222;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 250px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px #00ffcc;
+}
+
+footer {
+  padding: 1rem;
+  background-color: #1f1f1f;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.iframe-container {
+  position: relative;
+  width: 90vw;
+  height: 90vh;
+}
+
+.iframe-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background: #ff3333;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.password-modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.password-box {
+  background: #1f1f1f;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #00ffcc;
+  text-align: center;
+  width: 300px;
+}
+
+.password-box h2 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.password-box input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.modal-buttons button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  background: #00ffcc;
+  color: #000;
+  transition: background 0.2s;
+}
+
+.modal-buttons button:hover {
+  background: #00ddb3;
+}
+
+#passwordError {
+  color: red;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
